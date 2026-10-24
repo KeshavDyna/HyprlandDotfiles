@@ -20,7 +20,7 @@
 
 ## ⚡ Highlights
 
-- **Pure Lua Configuration**: Programmatic and declarative Hyprland config using clean Lua tables and dispatchers[cite: 1].
+- **Pure Lua Configuration**: Programmatic and declarative Hyprland config using clean Lua tables and dispatchers].
 - **High Refresh & Dual Display**: Optimized out-of-the-box for a 240Hz main display alongside a secondary utility monitor[cite: 1].
 - **Nvidia DRM Ready**: Pre-configured environment flags (`nvidia_drm`, `__GLX_VENDOR_LIBRARY_NAME`) for low-latency Wayland composition[cite: 1].
 - **Aesthetic Depth**: Subtle border contrasts, 10px rounded corners, spring physics pop-in animations, and custom background blur[cite: 1].
