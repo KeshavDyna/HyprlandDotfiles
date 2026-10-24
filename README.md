@@ -20,11 +20,11 @@
 
 ## ⚡ Highlights
 
-- **Pure Lua Configuration**: Programmatic and declarative Hyprland config using clean Lua tables and dispatchers].
-- **High Refresh & Dual Display**: Optimized out-of-the-box for a 240Hz main display alongside a secondary utility monitor[cite: 1].
-- **Nvidia DRM Ready**: Pre-configured environment flags (`nvidia_drm`, `__GLX_VENDOR_LIBRARY_NAME`) for low-latency Wayland composition[cite: 1].
-- **Aesthetic Depth**: Subtle border contrasts, 10px rounded corners, spring physics pop-in animations, and custom background blur[cite: 1].
-- **Dual Launchers & Managers**: Integrated with both GUI (`Thunar`, `Rofi`, `Wofi`) and terminal-native tools (`Yazi`, `Neovim`)[cite: 1].
+- **Pure Lua Configuration**: Programmatic and declarative Hyprland config using clean Lua tables and dispatchers.
+- **High Refresh & Dual Display**: Optimized out-of-the-box for a 240Hz main display alongside a secondary utility monitor.
+- **Nvidia DRM Ready**: Pre-configured environment flags (`nvidia_drm`, `__GLX_VENDOR_LIBRARY_NAME`) for low-latency Wayland composition.
+- **Aesthetic Depth**: Subtle border contrasts, 10px rounded corners, spring physics pop-in animations, and custom background blur.
+- **Dual Launchers & Managers**: Integrated with both GUI (`Thunar`, `Rofi`, `Wofi`) and terminal-native tools (`Yazi`, `Neovim`).
 
 ---
 
@@ -32,62 +32,62 @@
 
 | Component | Software |
 | :--- | :--- |
-| **Compositor** | [Hyprland](https://hyprland.org/) (Lua API)[cite: 1] |
-| **Status Bar** | [Waybar](https://github.com/Alexays/Waybar)[cite: 1] |
-| **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/)[cite: 1] |
-| **Launchers** | [Rofi](https://github.com/davatorium/rofi) / [Wofi](https://hg.sr.ht/~scoopta/wofi)[cite: 1] |
-| **File Managers**| [Yazi](https://github.com/sxyazi/yazi) (TUI) & [Thunar](https://docs.xfce.org/xfce/thunar/start) (GUI)[cite: 1] |
-| **Code Editors** | [Neovim](https://neovim.io/) & [Visual Studio Code](https://code.visualstudio.com/)[cite: 1] |
-| **Wallpaper & Widgets** | `awww-daemon` & `eww daemon`[cite: 1] |
-| **Color Temperature** | [Hyprsunset](https://github.com/hyprwm/hyprsunset) (4500K toggle)[cite: 1] |
-| **Screenshots** | `grim` + `slurp` -> `wl-copy`[cite: 1] |
+| **Compositor** | [Hyprland](https://hyprland.org/) (Lua API) |
+| **Status Bar** | [Waybar](https://github.com/Alexays/Waybar) |
+| **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/) |
+| **Launchers** | [Rofi](https://github.com/davatorium/rofi) / [Wofi](https://hg.sr.ht/~scoopta/wofi) |
+| **File Managers**| [Yazi](https://github.com/sxyazi/yazi) (TUI) & [Thunar](https://docs.xfce.org/xfce/thunar/start) (GUI) |
+| **Code Editors** | [Neovim](https://neovim.io/) & [Visual Studio Code](https://code.visualstudio.com/) |
+| **Wallpaper & Widgets** | `awww-daemon` & `eww daemon` |
+| **Color Temperature** | [Hyprsunset](https://github.com/hyprwm/hyprsunset) (4500K toggle) |
+| **Screenshots** | `grim` + `slurp` -> `wl-copy` |
 
 ---
 
 ## ⌨️ Keybindings
 
-The primary modifier key is **`SUPER`** (Windows key)[cite: 1]. Secondary modifier is **`SUPER + SHIFT`**[cite: 1].
+The primary modifier key is **`SUPER`** (Windows key). Secondary modifier is **`SUPER + SHIFT`**.
 
 ### 🚀 Applications & Launchers
 
 | Keybinding | Action |
 | :--- | :--- |
-| `SUPER + Space` | Open App Launcher (`rofi drun`)[cite: 1] |
-| `SUPER + SHIFT + Space` | Open Run Dialog (`rofi run`)[cite: 1] |
-| `SUPER + R` | Open Alternate Menu (`wofi`)[cite: 1] |
-| `SUPER + T` | Launch Terminal (`kitty`)[cite: 1] |
-| `SUPER + Return` | Launch Editor (`kitty -e nvim`)[cite: 1] |
-| `SUPER + SHIFT + Return` | Launch GUI IDE (`code`)[cite: 1] |
-| `SUPER + B` | Launch Web Browser (`brave`)[cite: 1] |
-| `SUPER + D` | Launch Chat (`discord`)[cite: 1] |
-| `SUPER + M` | Launch Music (`spotify`)[cite: 1] |
-| `SUPER + E` | Open TUI File Manager (`yazi`)[cite: 1] |
-| `SUPER + SHIFT + E` | Open GUI File Manager (`thunar`)[cite: 1] |
+| `SUPER + Space` | Open App Launcher (`rofi drun`) |
+| `SUPER + SHIFT + Space` | Open Run Dialog (`rofi run`) |
+| `SUPER + R` | Open Alternate Menu (`wofi`) |
+| `SUPER + T` | Launch Terminal (`kitty`) |
+| `SUPER + Return` | Launch Editor (`kitty -e nvim`) |
+| `SUPER + SHIFT + Return` | Launch GUI IDE (`code`) |
+| `SUPER + B` | Launch Web Browser (`brave`) |
+| `SUPER + D` | Launch Chat (`discord`) |
+| `SUPER + M` | Launch Music (`spotify`) |
+| `SUPER + E` | Open TUI File Manager (`yazi`) |
+| `SUPER + SHIFT + E` | Open GUI File Manager (`thunar`) |
 
 ### 🪟 Window Management & Navigation
 
 | Keybinding | Action |
 | :--- | :--- |
-| `SUPER + Q` | Close focused window[cite: 1] |
-| `SUPER + V` | Toggle floating mode[cite: 1] |
-| `SUPER + F` | Maximize window[cite: 1] |
-| `SUPER + SHIFT + F` | Toggle true fullscreen[cite: 1] |
-| `SUPER + P` | Toggle pseudo-tiling[cite: 1] |
-| `SUPER + J` | Toggle layout split orientation[cite: 1] |
-| `SUPER + Arrow Keys` | Move focus across windows[cite: 1] |
-| `SUPER + SHIFT + Arrow Keys` | Move window position[cite: 1] |
-| `SUPER + [1-9]` | Switch to workspace [1-9][cite: 1] |
-| `SUPER + SHIFT + [1-9]` | Move active window to workspace [1-9][cite: 1] |
-| `SUPER + Mouse Scroll` | Cycle workspaces[cite: 1] |
-| `SUPER + LMB / RMB Drag` | Move / Resize windows[cite: 1] |
+| `SUPER + Q` | Close focused window |
+| `SUPER + V` | Toggle floating mode |
+| `SUPER + F` | Maximize window |
+| `SUPER + SHIFT + F` | Toggle true fullscreen |
+| `SUPER + P` | Toggle pseudo-tiling |
+| `SUPER + J` | Toggle layout split orientation |
+| `SUPER + Arrow Keys` | Move focus across windows |
+| `SUPER + SHIFT + Arrow Keys` | Move window position |
+| `SUPER + [1-9]` | Switch to workspace [1-9] |
+| `SUPER + SHIFT + [1-9]` | Move active window to workspace [1-9] |
+| `SUPER + Mouse Scroll` | Cycle workspaces |
+| `SUPER + LMB / RMB Drag` | Move / Resize windows |
 
 ### 🛠️ Utilities
 
 | Keybinding | Action |
 | :--- | :--- |
-| `SUPER + SHIFT + S` | Select area screenshot to clipboard (`grim + slurp`)[cite: 1] |
-| `SUPER + SHIFT + N` | Toggle Night Light (`hyprsunset 4500K`)[cite: 1] |
-| `SUPER + SHIFT + F4` | Session exit / shutdown prompt[cite: 1] |
-| `Media Keys` | Volume, mute, brightness, and player controls[cite: 1] |
+| `SUPER + SHIFT + S` | Select area screenshot to clipboard (`grim + slurp`) |
+| `SUPER + SHIFT + N` | Toggle Night Light (`hyprsunset 4500K`) |
+| `SUPER + SHIFT + F4` | Session exit / shutdown prompt |
+| `Media Keys` | Volume, mute, brightness, and player controls |
 
 ---
