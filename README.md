@@ -44,6 +44,11 @@
 
 ---
 
+### Dependencies 
+| sudo pacman -S hyprland kitty rofi-wayland waybar grim slurp wl-clipboard playerctl brightnessctl thunar |
+    
+---
+
 ## ⌨️ Keybindings
 
 The primary modifier key is **`SUPER`** (Windows key). Secondary modifier is **`SUPER + SHIFT`**.
