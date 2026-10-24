@@ -12,7 +12,7 @@
   </p>
 
   <!-- Replace with your actual screenshot path -->
-  <img src="assets/preview.png" alt="Desktop Preview" width="100%" />
+  <img src="https://postimg.cc/cvWS8CkW" alt="Desktop Preview" width="100%" />
 
 </div>
 
