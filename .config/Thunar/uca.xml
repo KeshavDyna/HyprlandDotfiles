@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1791619216674439-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Extract here</name>
+	<submenu></submenu>
+	<unique-id>1791831742111510-1</unique-id>
+	<command>unzip %f -d ./</command>
+	<description>Extract archive into current folder</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Extract To...</name>
+	<submenu></submenu>
+	<unique-id>1791831798943980-2</unique-id>
+	<command>zenity --file-selection --directory --title=&quot;Select Destination&quot; | xargs -I {} unzip %f -d &quot;{}&quot;</command>
+	<description>Extract archive to chosen destination</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create Folder</name>
+	<submenu></submenu>
+	<unique-id>1791831982218691-3</unique-id>
+	<command>zenity --entry --title=&quot;Create Folder&quot; --text=&quot;Enter new folder name:&quot; | xargs -I {} mkdir -p &quot;%f/{}&quot;</command>
+	<description>create a new folder</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>

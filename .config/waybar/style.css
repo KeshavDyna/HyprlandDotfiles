@@ -1,0 +1,121 @@
+@define-color glass rgba(0, 0, 0, 0.65);
+
+* {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 14px;
+  min-height: 0;
+  font-weight: bold;
+}
+
+window#waybar {
+  background: transparent;
+  color: #cdd6f4;
+}
+
+#workspaces,
+#clock,
+#window,
+#wireplumber,
+#pulseaudio,
+#bluetooth,
+#custom-weather,
+#tray {
+  background: @glass;
+  padding: 4px 12px;
+  margin: 6px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 50px;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+#workspaces button:not(:last-child) {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 25%,
+    rgba(255, 255, 255, 0.4) 25%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%
+  );
+  background-size: 1px 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 12px;
+  margin-right: 2px;
+}
+
+#workspaces button {
+  color: #cdd6f4;
+  padding: 0 4px;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #ffffff,
+    0 0 10px rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+}
+
+#workspaces button.urgent {
+  color: #bb2828;
+  text-shadow:
+    0 0 4px #f01818,
+    0 0 8px #890c0c,
+    0 0 10px rgba(255, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+/* Bluetooth */
+
+#bluetooth.connected {
+  color: #ffffff;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #ffffff,
+    0 0 10px rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+}
+
+#network.disconnected {
+  color: red;
+  text-shadow:
+    0 0 4px #000000,
+    0 0 8px #000000,
+    0 0 10px rgba(255, 255, 255, 0.5);
+  opacity: 0.95;
+  padding: 4px 12px;
+  margin: 6px 4px;
+  border-radius: 50px;
+}
+
+#custom-separator {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 7px;
+  margin: 0 6px;
+}
+
+#workspaces:hover,
+#wireplumber:hover,
+#workspaces button:hover,
+#window:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#clock:hover,
+#custom-weather:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#custom-weather.weather-unavailable {
+  color: #aaaaaa;
+}
+
+#wireplumber.muted {
+  color: red;
+  text-shadow:
+    0 0 4px #000000,
+    0 0 8px #000000,
+    0 0 10px rgba(255, 255, 255, 0.5);
+}

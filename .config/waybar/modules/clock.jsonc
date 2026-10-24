@@ -1,0 +1,35 @@
+{
+    "group/clock": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/date",
+            "custom/separator",
+            "custom/day",
+            "custom/separator",
+            "custom/time"
+        ]
+    },
+
+    "custom/date": {
+        "exec": "date '+%d %b'",
+        "interval": 60,
+        "tooltip": false
+    },
+
+    "custom/day": {
+        "exec": "date '+%a'",
+        "interval": 60,
+        "tooltip": false
+    },
+
+    "custom/time": {
+        "exec": "date '+%I:%M %p'",
+        "interval": 60,
+        "tooltip": false
+    },
+
+    "custom/separator": {
+        "format": "│",
+        "tooltip": false
+    }
+}

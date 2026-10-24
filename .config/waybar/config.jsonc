@@ -1,0 +1,58 @@
+[
+    {
+        "name": "main",
+        "output": "DP-2",
+        "layer": "top",
+        "position": "top",
+        "height": 36,
+        "include": [
+            "~/.config/waybar/modules/window.jsonc",
+            "~/.config/waybar/modules/battery.jsonc",
+            "~/.config/waybar/modules/clock.jsonc",
+            "~/.config/waybar/modules/bluetooth.jsonc",
+            "~/.config/waybar/modules/network.jsonc",
+            "~/.config/waybar/modules/taskbar.jsonc",
+            "~/.config/waybar/modules/weather.jsonc",
+            "~/.config/waybar/modules/wireplumber.jsonc"
+        ],
+        "modules-left": [],
+        "modules-center": [
+            "hyprland/workspaces",
+            "group/clock"
+        ],
+        "modules-right": [
+            "bluetooth",
+            "network",
+            "wireplumber",
+            "custom/weather",
+            "bluetooth",
+            "network"
+        ]
+    },
+    {
+        "name": "secondary",
+        "output": "DP-1",
+        "layer": "top",
+        "position": "top",
+        "height": 36,
+        "include": [
+            "~/.config/waybar/modules/window.jsonc",
+            "~/.config/waybar/modules/battery.jsonc",
+            "~/.config/waybar/modules/clock.jsonc",
+            "~/.config/waybar/modules/bluetooth.jsonc",
+            "~/.config/waybar/modules/network.jsonc",
+            "~/.config/waybar/modules/taskbar.jsonc",
+            "~/.config/waybar/modules/weather.jsonc"
+        ],
+        "modules-left": [
+            "hyprland/window"
+        ],
+        "modules-center": [
+            "hyprland/workspaces",
+            "hyprland/submap"
+        ],
+        "modules-right": [
+            "group/clock"
+        ]
+    }
+]

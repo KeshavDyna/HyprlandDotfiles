@@ -1,0 +1,11 @@
+{
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
+    "on-click": "eww open --toggle volume",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5,
+    "tooltip": false
+  }
+}

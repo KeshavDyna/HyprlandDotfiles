@@ -1,0 +1,68 @@
+@define-color highlight rgba(117, 241, 250, 1);
+@define-color darkest rgba(0, 0, 0, 1);
+@define-color active rgba(0, 0, 0, 0.6);
+@define-color inactive rgba(0, 0, 0, 0.3);
+@define-color transp rgba(24, 24, 27, 0);
+@define-color glass rgba(20, 25, 35, 0.6);
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
+  font-size: 16px;
+}
+
+/* WINDOW */
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* WORKSPACES */
+
+#workspaces {
+  background: @glass;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  margin: 0px;
+  border-radius: 50px;
+  color: white;
+}
+
+#workspaces button.active {
+  color: white;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #ffffff,
+    0 0 12px rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+}
+
+#workspaces button:not(:last-child) {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 25%,
+    rgba(255, 255, 255, 0.4) 25%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%
+  );
+  background-size: 1px 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 12px;
+  margin-right: 2px;
+}
+
+/* CLOCK */
+
+#clock {
+  background: @glass;
+  padding: 0 2px;
+  margin: 3px;
+  border-radius: 50px;
+}

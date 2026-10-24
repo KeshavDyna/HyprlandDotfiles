@@ -1,0 +1,35 @@
+
+(defpoll volume :interval "1s"
+  "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f\", $2 * 100}'")
+
+(defwidget volume-slider []
+  (box
+    :class "volume-popup"
+    (scale
+      :min 0
+      :max 101
+      :value volume
+      :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%"
+      :draw-value false
+      :orientation "v"
+      :flipped true
+      :height 130
+      :width 30
+    )
+  )
+)
+
+(defwindow volume
+  :monitor 1
+  :geometry (geometry
+    :anchor "top right"
+    :x "195px"
+    :y "-2px"
+    :height "150px"
+  )
+  :stacking "fg"
+  :exclusive false
+  :focusable false
+  :windowtype "dialog"
+  (volume-slider)
+)
