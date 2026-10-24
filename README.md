@@ -45,7 +45,7 @@
 ---
 
 ## 📦 Dependencies 
-
+| :--- |
 | sudo pacman -S hyprland kitty rofi-wayland waybar grim slurp wl-clipboard playerctl brightnessctl thunar |
     
 ---
